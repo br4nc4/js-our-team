@@ -57,5 +57,6 @@ const membriTeam = [
 //MILESTONE 1
 for(let i=0; i<membriTeam.length; i++){
     const cardMember = membriTeam[i];
-    console.log(`Memebro del Team ${cardMember.nominativo} Ruolo ${cardMember.ruolo}`);
+    //console.log(`Memebro del Team ${cardMember.nominativo} Ruolo ${cardMember.ruolo}`);
+    console.log(`Membro \n ${cardMember.nominativo} \nRuolo \n ${cardMember.ruolo}`);
 }
