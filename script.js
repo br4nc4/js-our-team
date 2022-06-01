@@ -63,6 +63,6 @@ for(let i=0; i<membriTeam.length; i++){
     const cardMember = membriTeam[i];
     //console.log(`Memebro del Team ${cardMember.nominativo} Ruolo ${cardMember.ruolo}`);
     console.log(`Membro \n ${cardMember.nominativo} \nRuolo \n ${cardMember.ruolo}`);
-    cardText.innerText = `${membriTeam[0].nominativo} \n ${membriTeam[0].ruolo}`;
+    cardText.innerHTML = `<h3>${membriTeam[0].nominativo}</h3> \n <p>${membriTeam[0].ruolo}</p>`;
     teamCard.append(cardText);
 }
