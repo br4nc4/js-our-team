@@ -13,9 +13,15 @@
         </div>
 </div> */
 
+//variabili globali
+
+
+
+
+
 //creo l'array di oggetti contenente i membre del Team
 //per iniziare il numero di membri è pari a 6
-const membri=[
+const membriTeam = [
     //OBJECT 1 ALL'INDICE 0
     {
         nominativo: "Wayne Barnett",
@@ -47,3 +53,9 @@ const membri=[
         ruolo: "Graphic Designer",
     },
 ];
+
+//MILESTONE 1
+for(let i=0; i<membriTeam.length; i++){
+    const cardMember = membriTeam[i];
+    console.log(`Memebro del Team ${cardMember.nominativo} Ruolo ${cardMember.ruolo}`);
+}
