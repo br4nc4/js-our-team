@@ -14,6 +14,8 @@
 </div> */
 
 //variabili globali
+const containerTeam = document.querySelector(".team-container");
+const teamCard = document.querySelector(".team-card");
 
 
 
@@ -59,4 +61,5 @@ for(let i=0; i<membriTeam.length; i++){
     const cardMember = membriTeam[i];
     //console.log(`Memebro del Team ${cardMember.nominativo} Ruolo ${cardMember.ruolo}`);
     console.log(`Membro \n ${cardMember.nominativo} \nRuolo \n ${cardMember.ruolo}`);
+    teamCard.innerHTML = membriTeam[0].nominativo + membriTeam[0].ruolo;
 }
