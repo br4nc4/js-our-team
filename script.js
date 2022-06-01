@@ -60,25 +60,14 @@ for(let i=0; i<membriTeam.length; i++){
     //TEST MILESTONE 2
     //cardTeam.innerHTML += `<div class="card-text"><h3>${membriTeam[i].nominativo}</h3><p>${membriTeam[i].ruolo}</p></div>`;
     //containerTeam.append(cardTeam);
+    containerTeam.append(createCard(membriTeam[i]));
 }
 
 //MILESTONE 2
-for(let i=0; i<6; i++){
-    containerTeam.append(createCard(membriTeam));
-}
-
-
 function createCard(membriTeam){
     const cardTeam = document.createElement("div");
     cardTeam.classList.add("team-card");
-    for(let i=0; i<membriTeam.length; i++){
-        cardTeam.innerHTML += `<h3>${membriTeam[i].nominativo}</h3> \n <p>${membriTeam[i].ruolo}</p>`;
-    }
+    cardTeam.innerHTML += `<h3>${membriTeam.nominativo}</h3> \n <p>${membriTeam.ruolo}</p>`;
     
     return cardTeam;
 }
-
-
-
-
-//`<h3>${membriTeam[0].nominativo}</h3> \n <p>${membriTeam[0].ruolo}</p>`;
