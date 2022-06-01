@@ -60,7 +60,7 @@ for(let i=0; i<membriTeam.length; i++){
     //console.log(`Memebro del Team ${cardMember.nominativo} Ruolo ${cardMember.ruolo}`);
     console.log(`Membro \n ${cardMember.nominativo} \nRuolo \n ${cardMember.ruolo}`);
     //TEST MILESTONE 2
-    cardTeam.innerHTML = `<div class="card-text"><h3>${membriTeam[0].nominativo}</h3><p>${membriTeam[0].ruolo}</p></div>`
+    cardTeam.innerHTML += `<div class="card-text"><h3>${membriTeam[i].nominativo}</h3><p>${membriTeam[i].ruolo}</p></div>`;
     containerTeam.append(cardTeam);
 }
 
