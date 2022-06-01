@@ -15,9 +15,8 @@
 
 //variabili globali
 const containerTeam = document.querySelector(".team-container");
-const teamCard = document.querySelector(".team-card");
-const cardText = document.createElement("div");
-cardText.classList.add("card-text");
+const cardTeam = document.createElement("div");
+cardTeam.classList.add("team-card");
 
 
 
@@ -63,6 +62,9 @@ for(let i=0; i<membriTeam.length; i++){
     const cardMember = membriTeam[i];
     //console.log(`Memebro del Team ${cardMember.nominativo} Ruolo ${cardMember.ruolo}`);
     console.log(`Membro \n ${cardMember.nominativo} \nRuolo \n ${cardMember.ruolo}`);
-    cardText.innerHTML = `<h3>${membriTeam[0].nominativo}</h3> \n <p>${membriTeam[0].ruolo}</p>`;
-    teamCard.append(cardText);
+    cardTeam.innerHTML = `<div class="card-text"><h3>${membriTeam[0].nominativo}</h3><p>${membriTeam[0].ruolo}</p></div>`
+    containerTeam.append(cardTeam);
 }
+
+
+//`<h3>${membriTeam[0].nominativo}</h3> \n <p>${membriTeam[0].ruolo}</p>`;
