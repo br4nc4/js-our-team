@@ -66,7 +66,7 @@ for(let i=0; i<membriTeam.length; i++){
 //MILESTONE 2
 function createCard(membriTeam){
     const cardTeam = document.createElement("div");
-    cardTeam.classList.add("team-card");
+    cardTeam.classList.add("card-text");
     cardTeam.innerHTML += `<h3>${membriTeam.nominativo}</h3> \n <p>${membriTeam.ruolo}</p>`;
     
     return cardTeam;
