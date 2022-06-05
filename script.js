@@ -17,6 +17,7 @@
 const containerTeam = document.querySelector(".team-container");
 
 
+
 //creo l'array di oggetti contenente i membre del Team
 //per iniziare il numero di membri è pari a 6
 const membriTeam = [
@@ -52,6 +53,7 @@ const membriTeam = [
     },
 ];
 
+
 //MILESTONE 1
 for(let i=0; i<membriTeam.length; i++){
     const cardMember = membriTeam[i];
@@ -61,13 +63,34 @@ for(let i=0; i<membriTeam.length; i++){
     //cardTeam.innerHTML += `<div class="card-text"><h3>${membriTeam[i].nominativo}</h3><p>${membriTeam[i].ruolo}</p></div>`;
     //containerTeam.append(cardTeam);
     containerTeam.append(createCard(membriTeam[i]));
+    
 }
 
 //MILESTONE 2
-function createCard(membriTeam){
+/* function createCard(membriTeam){
     const cardTeam = document.createElement("div");
+    
+
     cardTeam.classList.add("card-text");
+
+
     cardTeam.innerHTML += `<h3>${membriTeam.nominativo}</h3> \n <p>${membriTeam.ruolo}</p>`;
     
+
     return cardTeam;
+} */
+
+//MILESTONE2
+function createCard(membriTeam){
+    const entireCard = document.createElement("div");
+    entireCard.classList.add("team-card");
+    entireCard.append(textCard(membriTeam));
+    return entireCard;
+}
+
+function textCard(membriTeam){
+    const txtCard = document.createElement("div");
+    txtCard.classList.add("card-text");
+    txtCard.innerHTML += `<h3>${membriTeam.nominativo}</h3> \n <p>${membriTeam.ruolo}</p>`;
+    return txtCard;
 }
